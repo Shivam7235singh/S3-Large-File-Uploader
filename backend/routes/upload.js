@@ -45,7 +45,7 @@ router.post("/start-upload", async(req, res ) =>{
 
 // Step 2: Get Signed URL for a Chunk
 
- router .get("/get-signed-url", async(req, res) =>{
+ router.get("/get-signed-url", async(req, res) =>{
     try {
         const {uploadId , key , partNumber} = req.body;
         const command = new UploadPartCommand({

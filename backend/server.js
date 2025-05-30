@@ -12,6 +12,10 @@ app.use(express.json({limit: '100mb'} ));
 
 mongoose.connect(process.env.MONGODB_URI).then(()=>console.log("mongodb connected")).catch((err)=>console.log(err));
 
+app.get('/', (req, res) =>res.send('File Uploader Backend Running'))
+app.use('/api/upload', Uploadroute);
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
