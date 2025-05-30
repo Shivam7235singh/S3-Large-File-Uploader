@@ -1,0 +1,55 @@
+# Node.js dependencies
+node_modules/
+
+# dotenv environment variables
+.env
+.env.*     # if using .env.development, .env.production, etc.
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build directories
+dist/
+build/
+.next/
+out/
+
+# Coverage reports
+coverage/
+
+# Misc
+*.tgz
+*.log
+*.bak
+*.swp
+*.tmp
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: if you're using testing frameworks
+jest-html-reporters-*.html
+playwright-report/
+test-results/
+
+# MongoDB local database files (if any)
+data/db
+
+# PM2 logs (if using PM2 process manager)
+pids/
+logs/
